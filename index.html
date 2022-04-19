@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section {
+            width: 700px;
+            margin: 0 auto;
+            background-color: aqua;
+            min-height: 550px;
+            text-align: center;
+        }
+
+        section h1 {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <title>SlideToggle-jQuery</title>
+</head>
+<body>
+
+    <header></header>
+    <section>
+        <article>
+            <h1>JQUERY - slideToggle()</h1>
+        </article>
+        <article>
+            <button>clique ici</button> <br> <br>
+            <img src="img/image1.jpg" alt="">
+            <img src="img/image2.jpg" alt="">
+            <img src="img/image3.jpg" alt="">
+        </article>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $('button').click(function() { 
+                $('img').slideToggle('fast'); 
+            })
+        })
+    </script>
+</body>
+</html>
